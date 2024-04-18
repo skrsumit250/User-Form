@@ -4,7 +4,7 @@
 
 ## Running the application
 1. Clone the project repository.
-2. Install dependencies: `npm install`
+2. Install dependencies: `npm install` in client folder
 3. Update connection string (URI) to connect MongoDB database 
 4. Start the server: `node server.js` or `npm start`
 5. Start the client-side application (assuming create-react-app): `npm start`
