@@ -36,13 +36,10 @@ Connects to a MongoDB database using a defined connection string (URI).
   - age (string)
   - date (string)
   - audio (buffer)
-  - Saves the submitted data to the MongoDB database and sends a response back to the client.
+  - Saves the submitted data to the MongoDB database and shows the submitted to the client.
 
 ### Client-side (`App.js`)
 Built with React to manage the user interface and interactivity.
-
-#### Technologies:
-- React
 
 #### Functions:
 - collectData: Handles form submission, collecting data and sending it to the server via a fetch request.
