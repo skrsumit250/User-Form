@@ -16,7 +16,8 @@ function App() {
   const collectData=async(e)=>{
     e.preventDefault();
     try{
-      const response=await fetch('http://localhost:5000/',{
+      const PORT=5000;
+      const response=await fetch('http://localhost:'+PORT,{
         method:'post',
         body:JSON.stringify({doctor,patient,age,date,audio}),
         headers:{

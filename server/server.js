@@ -9,12 +9,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const URI='mongodb://127.0.0.1:27017/Form'  // Connection String
+const URI='mongodb://127.0.0.1:27017/Form';  // Connection String
+const PORT=5000;
 mongoose.connect(URI)
 .then((result)=>{
     console.log('DB Connected');
-    app.listen(5000,()=>{
-        console.log('server is listening on http://localhost:5000/');
+    app.listen(PORT,()=>{
+        console.log('server is listening on http://localhost:'+PORT);
     });
 })
 .catch((err)=>{
