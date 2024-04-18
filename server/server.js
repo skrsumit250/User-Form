@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 const URI='mongodb://127.0.0.1:27017/Form';  // Connection String
-const PORT=5000;
+const PORT=4000;
 mongoose.connect(URI)
 .then((result)=>{
     console.log('DB Connected');
